@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-subtle{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,0.6);}50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(37,211,102,0);}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-container-low": "#1c1b1d",
+        "on-primary-fixed": "#410007",
+        "secondary-fixed": "#e2e2e5",
+        "on-secondary-fixed": "#1a1c1e",
+        "tertiary": "#c7c5d1",
+        "surface-container-high": "#2a2a2c",
+        "secondary": "#c6c6c9",
+        "inverse-on-surface": "#313032",
+        "tertiary-fixed": "#e3e1ed",
+        "outline": "#ae8786",
+        "secondary-container": "#4a4b4e",
+        "on-primary-fixed-variant": "#92001b",
+        "on-error": "#690005",
+        "inverse-surface": "#e5e1e4",
+        "tertiary-fixed-dim": "#c7c5d1",
+        "on-tertiary": "#303039",
+        "on-secondary-container": "#bbbbbe",
+        "outline-variant": "#5d3f3e",
+        "on-surface": "#e5e1e4",
+        "surface-bright": "#39393b",
+        "inverse-primary": "#bf0027",
+        "on-primary-container": "#5b000d",
+        "on-secondary": "#2f3033",
+        "secondary-fixed-dim": "#c6c6c9",
+        "on-tertiary-fixed": "#1b1b23",
+        "error": "#ffb4ab",
+        "tertiary-container": "#918f9b",
+        "primary-fixed": "#ffdad8",
+        "surface-container-lowest": "#0e0e10",
+        "on-surface-variant": "#e7bcba",
+        "on-tertiary-container": "#292932",
+        "on-primary": "#680010",
+        "surface-container-highest": "#353437",
+        "surface-dim": "#131315",
+        "primary-container": "#ff535a",
+        "surface-tint": "#ffb3b0",
+        "background": "#131315",
+        "surface-variant": "#353437",
+        "on-error-container": "#ffdad6",
+        "surface-container": "#201f21",
+        "surface": "#131315",
+        "primary-fixed-dim": "#ffb3b0",
+        "error-container": "#93000a",
+        "on-background": "#e5e1e4",
+        "on-secondary-fixed-variant": "#454749",
+        "on-tertiary-fixed-variant": "#464650",
+        "primary": "#ffb3b0"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-lg": "1.5rem",
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "space-xl": "3rem",
+        "gutter-mobile": "1rem",
+        "space-xs": "0.25rem",
+        "margin": "3rem",
+        "gutter": "1.5rem",
+        "margin-mobile": "1.25rem"
+      },
+      "fontFamily": {
+        "display-hero": ["Space Grotesk"],
+        "display-hero-mobile": ["Space Grotesk"],
+        "body-sm": ["Inter"],
+        "label-sm": ["Inter"],
+        "headline-lg-mobile": ["Space Grotesk"],
+        "headline-xl": ["Space Grotesk"],
+        "headline-md": ["Space Grotesk"],
+        "headline-lg": ["Space Grotesk"],
+        "headline-sm": ["Space Grotesk"],
+        "body-md": ["Inter"],
+        "body-lg": ["Inter"],
+        "headline-xl-mobile": ["Space Grotesk"],
+        "label-mono": ["Space Grotesk"]
+      },
+      "fontSize": {
+        "display-hero": ["5rem", {"lineHeight": "5.25rem", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+        "display-hero-mobile": ["2.75rem", {"lineHeight": "3rem", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+        "body-sm": ["0.8125rem", {"lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "label-sm": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.08em", "fontWeight": "600"}],
+        "headline-lg-mobile": ["1.75rem", {"lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-xl": ["3.5rem", {"lineHeight": "3.75rem", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+        "headline-md": ["1.5rem", {"lineHeight": "1.875rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-lg": ["2.25rem", {"lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "headline-sm": ["1.125rem", {"lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600"}],
+        "body-md": ["0.9375rem", {"lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400"}],
+        "body-lg": ["1.125rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+        "headline-xl-mobile": ["2.25rem", {"lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "label-mono": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.14em", "fontWeight": "700"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30"><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="ANASAL ENTERPRISES Official Sportswear Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UWy3epmlBkSdxyLhwJj00PKICgi0Ycp7GqitFW6IvER3qXfMt9dRs1mhGZcUNE45aE02akq5mqYz7NXYkq5yHz-TxfyUolIdvj4mItY0QOrzd70_PAVGQnVo0gqO2NbmNPj_e6owHUEWkdquIP65iuxj13rNF6dPTDSR6CkP-mIEGMwHX5uPuIHNoONs3N2cCTWAe4vwZzdi20KlVGdlfu-z8RXcYhrpFd2MgaImMO"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight uppercase text-on-surface font-bold">ANASAL ENTERPRISES</span><span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-widest hidden sm:block">Built to Perform</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="uppercase transition-colors text-primary font-bold" data-path="home" href="#">Home</a><a class="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#">Products</a><a class="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="custom-sportswear" href="#">Custom Sportswear</a><a class="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="request-a-quote" href="#">Request a Quote</a><a class="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Toggle Light/Dark Display Mode" class="w-9 h-9 flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="material-symbols-outlined text-[20px] dark:hidden">dark_mode</span><span class="material-symbols-outlined text-[20px] hidden dark:inline-block">light_mode</span></button><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md bg-inverse-surface hover:bg-primary-container text-inverse-on-surface hover:text-on-surface transition-all font-headline-sm text-headline-sm uppercase font-bold tracking-wider" data-path="request-a-quote" href="#">REQUEST A QUOTE</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Toggle mobile menu" class="xl:hidden w-10 h-10 flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="const d=document.getElementById('mobile-nav-drawer');d.classList.toggle('hidden');d.classList.toggle('flex');" type="button"><span class="material-symbols-outlined">menu</span></button></div></div><div class="hidden flex-col w-full bg-surface-container-lowest border-b border-outline-variant/40 px-margin-mobile py-space-lg space-y-space-md xl:hidden" id="mobile-nav-drawer"><nav class="flex flex-col space-y-space-sm" data-active-classes="text-primary font-bold"><a aria-current="page" class="uppercase py-space-xs transition-colors text-primary font-bold" data-path="home" href="#">Home</a><a class="font-label-mono text-label-mono uppercase py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-mono text-label-mono uppercase py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#">Products</a><a class="font-label-mono text-label-mono uppercase py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="custom-sportswear" href="#">Custom Sportswear</a><a class="font-label-mono text-label-mono uppercase py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="request-a-quote" href="#">Request a Quote</a><a class="font-label-mono text-label-mono uppercase py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="pt-space-sm border-t border-outline-variant/20"><a class="w-full flex items-center justify-center h-11 bg-primary-container text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider" data-path="request-a-quote" href="#">REQUEST A QUOTE</a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[92vh] flex items-center overflow-hidden bg-surface-container-lowest">
+<!-- Background Athletic Imagery with Tactical Scrim -->
+<div class="absolute inset-0 z-0">
+<img alt="Professional sports team in stadium under floodlights wearing sleek black and red custom athletic kits" class="w-full h-full object-cover object-center opacity-40 filter contrast-125 saturate-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrxVNxOLCwVDlkfAPIJgJ3PtcJCeWv_PqOR1gpEi9UZSWKnH8f2xCJoxtfnlwpBvhfofJVP1ICCwqQ62MwEG5wAuXDvL7p4d9SmOPZs6S7Sr117iZor9bY3KOlRwt-KtOxh05ISmxLQo3laB72r3HXVYY0CkqFLILhvT7BnND0Lp8tTjvj6lrNh9hka2A9g8LslMXBjS4TnUL-wGuv2jDs6SA47qH6rT1gM9TQbrk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/90 to-transparent"></div>
+<!-- Tactical Precision Grid Pattern Overlay -->
+<div class="absolute inset-0 bg-[radial-gradient(#ff535a_1px,transparent_1px)] [background-size:32px_32px] opacity-10 pointer-events-none"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin py-space-xl flex flex-col justify-center">
+<div class="max-w-4xl space-y-space-md">
+<!-- Monospace Status Badge -->
+<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-surface-container-high border-l-2 border-primary-container text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary-fixed">Engineered In Sialkot • Global Fulfillment</span>
+</div>
+<!-- Primary Dominant Headline -->
+<h1 class="font-display-hero text-display-hero text-on-surface uppercase tracking-tight font-extrabold leading-none">
+          Custom Sportswear. <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-fixed via-primary-container to-surface-tint">Built to Perform.</span>
+</h1>
+<!-- Supporting Text -->
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl leading-relaxed">
+          Premium custom sportswear for teams that want to perform, compete, and stand out. Precision-crafted in Sialkot, Pakistan for professional clubs, academies, and competitive athletic programs worldwide.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center justify-center h-14 px-space-lg bg-primary-container hover:bg-on-primary-fixed text-on-surface transition-all font-headline-sm text-headline-sm uppercase font-bold tracking-wider group shadow-xl" href="#quote">
+<span>REQUEST A QUOTE</span>
+<span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center h-14 px-space-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all font-headline-sm text-headline-sm uppercase font-semibold tracking-wider border-b-2 border-outline-variant" href="#products">
+<span>EXPLORE PRODUCTS</span>
+<span class="material-symbols-outlined ml-2 text-secondary">expand_more</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- HERO TRUST INDICATORS (4-Badge Monolithic Bar) -->
+<section class="w-full bg-surface-container-low py-6 px-margin-mobile md:px-margin">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+<div class="flex items-center gap-space-sm p-4 bg-surface-container border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase leading-tight">20+ PIECES MOQ</h4>
+<p class="font-body-sm text-body-sm text-secondary">Low minimums for clubs</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-4 bg-surface-container border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase leading-tight">CUSTOM DESIGNS</h4>
+<p class="font-body-sm text-body-sm text-secondary">Sublimation, embroidery &amp; trims</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-4 bg-surface-container border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl">public</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase leading-tight">WORLDWIDE SHIPPING</h4>
+<p class="font-body-sm text-body-sm text-secondary">Fast DHL / FedEx freight</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-4 bg-surface-container border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase leading-tight">TEAM-FOCUSED</h4>
+<p class="font-body-sm text-body-sm text-secondary">Dedicated kit specialists</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT ANASAL ENTERPRISES: BUILT AROUND YOUR TEAM -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface" id="about">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-2">
+<span class="h-0.5 w-6 bg-primary-container"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Sialkot Craftsmanship Heritage</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface leading-tight">
+            Built Around <span class="text-primary-container">Your Team</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+            Anasal Enterprises is a professional sportswear supplier focused on providing quality sportswear and custom teamwear for sports teams. From team colors and logos to player names and numbers, Anasal Enterprises helps teams create sportswear that represents who they are.
+          </p>
+<div class="p-space-md bg-surface-container-low border-l-4 border-primary">
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Every stitch, cut, and sublimation print is executed inside the world’s sportswear epicenter in Sialkot, Pakistan. We fuse world-renowned sporting craftsmanship with bleeding-edge moisture-wicking textiles."
+            </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative group overflow-hidden bg-surface-container-high">
+<img alt="Macro detail view of custom sports jersey breathable mesh fabric and precision athletic embroidery crest with intense red thread" class="w-full h-80 lg:h-96 object-cover filter contrast-110 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgCIfEAQEOr2pC44FeexAKquSAWxO6Jltsu-5-2pNkaMpU8GHX83Dw8c3F3P6_KR8c_MUkuCXqOiKK4dFDgPezRad9mjr-VQNDkbFF3IrocB_fU676uzRchRPDeCYJsx8eboe6jLIQDTzDHSR7NV-Ak-ZJkLvKMt-XNOeNGPmi-QrNbGNH-mM-SQJRrKb6pNzbByHXSNxgXo1miSzt1-ypAbsLitjwg1ZluUgZSO4"/>
+<div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-surface-container-lowest to-transparent flex justify-between items-end">
+<div>
+<span class="font-label-mono text-label-mono uppercase text-primary font-bold">SPEC NO. PK-SKT-09</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ultra-Breathe 220 GSM Polyester Mesh</p>
+</div>
+<span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+</div>
+</div>
+</div>
+<!-- 6 Core Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<div class="p-space-lg bg-surface-container-low hover:bg-surface-container transition-colors border-t-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">workspace_premium</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Uncompromising Quality</h3>
+<p class="font-body-md text-body-md text-secondary">High-tenacity double-needle stitching, anti-microbial fabric treatments, and enduring elasticity designed for extreme match play.</p>
+</div>
+<div class="p-space-lg bg-surface-container-low hover:bg-surface-container transition-colors border-t-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">design_services</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Custom Designs</h3>
+<p class="font-body-md text-body-md text-secondary">Total creative liberty. All-over HD dye-sublimation, silicone 3D crests, precision tackle twill, and metallic screen printing.</p>
+</div>
+<div class="p-space-lg bg-surface-container-low hover:bg-surface-container transition-colors border-t-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">bolt</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Fast Turnaround</h3>
+<p class="font-body-md text-body-md text-secondary">Streamlined digital proof approvals and factory-direct production scheduling to deliver your team uniforms on time for opening day.</p>
+</div>
+<div class="p-space-lg bg-surface-container-low hover:bg-surface-container transition-colors border-t-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">payments</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Affordable Teamwear</h3>
+<p class="font-body-md text-body-md text-secondary">Direct-from-manufacturer wholesale economics eliminate middlemen, maximizing your athletic club budget without sacrificing grade.</p>
+</div>
+<div class="p-space-lg bg-surface-container-low hover:bg-surface-container transition-colors border-t-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">military_tech</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Premium Sportswear</h3>
+<p class="font-body-md text-body-md text-secondary">Ergonomic tailoring, moisture transportation vents, 4-way stretch flex panels, and featherweight aerodynamic fits.</p>
+</div>
+<div class="p-space-lg bg-surface-container-low hover:bg-surface-container transition-colors border-t-2 border-transparent hover:border-primary-container">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">support_agent</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">Professional Support</h3>
+<p class="font-body-md text-body-md text-secondary">Direct WhatsApp communication with production coordinators who understand athletic patterns, sizing, and team logistics.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PRODUCTS SECTION: SPORTSWEAR FOR EVERY TEAM -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface-container-lowest" id="products">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-2">
+<span class="h-0.5 w-6 bg-primary-container"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Comprehensive Catalog</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">
+            Sportswear For <span class="text-primary-container">Every Team</span>
+</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xl">
+            Explore teamwear and sportswear designed for performance, identity, and style. No retail markups, customized exactly to your roster specs.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-mono text-label-mono uppercase text-secondary">MOQ: 20 Pcs Per Design</span>
+</div>
+</div>
+<!-- 8 Product Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 1. Football / Soccer Kits -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Football / Soccer Kits', 'Engineered pro-fit soccer jerseys and shorts. Fully sublimated graphics, moisture-wicking aeroready mesh, custom player names, squad numbers, and high-density silicone or embroidered crests.', '20 Sets', ['100% Interlock / Jacquard Polyester', 'Breathable side mesh panels', 'Full Sublimation &amp; Heat Transfer', 'Sizes: YXS to 4XL'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Football / Soccer match kits with custom player numbers and team sublimation print" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs1Pl9-EycExBYbgfCcNBwEO_bLkravbjk26fDv8CFkxbMNHmlIIGL07v93Dd6Isyxjd22SeiB27VGYCjRnb4XpPTZOleObXXgxckM7HMEB6A5xeT1FjPb-SoNi65xgUV3QrhCHN2g4xMbzmU_WcbZ_-kdYf0HdcPae4CIubgdRDrIOhjS2a2_vMi5VqM8ae1XP0WgZv_7NRwb1nF2zFKUDu6w59j0MdobBzrUqe8"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Sets</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Kits &amp; Matchwear</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Football / Soccer Kits</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Pro-fit jerseys and shorts with unlimited sublimation and breathable heat zones.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 2. Boxing Wear -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Boxing Wear', 'Championship-grade boxing satin shorts, fight robes, and training ring vests. Tailored high-stretch waistbands, embroidered club emblems, metallic trims, and reinforced split seams.', '20 Pieces', ['High-density boxing satin / micro-poly', 'Wide elastic waistband with drawstring', 'Metallic embroidery and patch appliqués', 'Full size range: Kids to Adult'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Custom boxing shorts and fight robes with embroidery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3L_lNAF0IXh4E5veHLsjaol78DfpLMzLntkQ1mqavqd1fTMRhFRF1XrNaNOzs-xei3n6ErGGyxffZJvqgpKZ2D3-nNu28fJaQBlTqO-Ek7NeS69SXgqfgC74_TVIBadxgba2DYliTMxFbT9bQY02FShK6f5ScVofLLY_7LMqKXFHvtBnfQqKrB6ve9CoH_aEl1YmM_ww38X971tDZE_7YGFH68K50M17wM_yvZcM"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Pcs</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Combat &amp; Ring</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Boxing Wear</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Championship satin trunks, fight jackets, and custom corner apparel.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 3. Gym & Fitness Wear -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Gym &amp; Fitness Wear', 'High-compression training tights, dry-fit gym tees, drop-arm tank tops, and lightweight running shorts. Designed with 4-way stretch spandex blends that retain form and maximize movement.', '20 Pieces', ['Polyester-Elastane performance blend', 'Anti-odor &amp; quick-drying finish', 'Flatlock anti-chafing seams', 'Screen print or silicone rubber logos'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Gym and fitness wear with compression apparel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcd4rmMYD6Rupbf5W-T_7kKSlzDyekFN34x5tG9BjjSV1lO_eyZz8QhKVlN8pzWnWP3Fvdc9QSsUxzDhIHSy_dCfOeiwOYFXOLFJJc28WASHRvwn586k_zKSbut6s-qS_QiczH6FDCofz5fty08fBfn6McQW9fMcA-NLlodpLBNGXdgX90LuzHyoCaJXMbkhIAckPb5tyLMX0OGXL0QNTAOJG57My5qkpTJUUxWxw"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Pcs</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Fitness &amp; Conditioning</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Gym &amp; Fitness Wear</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Compression gear, dry-tech athletic tees, and performance gym shorts.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 4. Tracksuits -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Custom Tracksuits', 'Full-zip or quarter-zip team presentation tracksuits. Durable tricot, fleece, or poly-taslan shells with rib cuffs, branded zips, and tapered zippered ankle track pants.', '20 Sets', ['Poly-Tricot / Bonded Fleece / Taslan', 'Heavy-duty SBS / YKK custom zippers', 'Zippered utility side pockets', 'Embroidered crest &amp; printed sleeve art'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Athletic tracksuits with custom colors and team badges" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0VubjMEkiSAfqWQmf1Eqx5oq97PR6qHZAoxGmLygX2IMIMRNYPZNWmsWLv5hkq_mChFU4VTtahiG8PYwXuq5ZsBv6Kv2coLLttNAq4ApKpYD0ZfGLA-dF4m1q0Xu9rNBRWYvv5T3QB8rK9KgkdlK1pigHhTqyPXYtC-uNfhlL1h7axpzrZJG0HjUwrQKI3HPVFqbKtj9zN2NYNVO3bh4EIQGzdFpdQfnZpGGtrvg"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Sets</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Travel &amp; Sideline</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Tracksuits</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Presentation warm-ups and slim-fit club travel suites with custom trims.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 5. Hoodies -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Team Hoodies &amp; Sweatshirts', 'Heavyweight 320-380 GSM cotton-poly blend athletic hoodies. Built with kangaroo pockets, dual-layered hoods, custom aglet drawstrings, and chenille or flat embroidery.', '20 Pieces', ['Cotton / Poly Fleece 340 GSM', 'Kangaroo pocket with reinforced bartacks', 'Custom branded silicone aglets', 'Embroidered club crest &amp; back print'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Heavyweight team athletic hoodies with embroidered chest logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUI1HGbZ-T46J6HAUFj3OCzM4TmyvdXUkB9nXfBG-gWYj4ZR6tkMKGgFDH3hHF4fFlC5Db2RcS-b-9jUGoiW-GrxQwGkyisptf31mI1Ga4eyP0vM1I3E5539rt9iKVggLo-7oMGgoY9X7p3W8jIPx3n3nWRZ_tw4M31eGg8J0eQUyMSjYff_gyPLM6Dg-X5KYuvh4Y6D8I-YoR2ENx6IShKUg3azT2EYRk-v_Fcmk"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Pcs</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Casual &amp; Warm-Up</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Hoodies</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Heavyweight fleece hoodies with custom lining, embroidery, and trims.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 6. Team Uniforms -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Complete Team Uniforms', 'Head-to-toe teamwear solutions including basketball jerseys, volleyball uniforms, rugby kit sets, and athletic league jerseys designed to rigorous collegiate standards.', '20 Sets', ['Heavy-duty tear-resistant knits', 'Reinforced neckbands and armholes', 'Sublimated or tackle-twill numbering', 'Custom club pantone color-matched'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Varsity and club team uniforms in action on court" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx2Krq_I2RGLPfnmBlE77FxCZGsjuj9DXEVc5fF45cC49rHvlCA-4uNqlaiMgR9LNrTp6YNPisgGqnkJcgPREDnez0C6SMnhLVSGrgBQ7yUzkbyyVhXkd1QZhPDXoDLj1vu8ywkpv9TGSEX6NsOBviyMbwh8M8XmyqyVbjlSeQYfUOqplScNqe9x1_NXPVTkgdrcNWfRlNe_RNKYcSnbO5hGeUeOGTIXutVMysVz0"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Sets</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Multi-Sport Leagues</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Team Uniforms</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Basketball, rugby, and multi-sport competitive team kits.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 7. Training Wear -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Athletic Training Wear', 'Daily drill tees, training bibs/pinnies, windbreakers, 1/4 zip midlayers, and session shorts crafted to endure repeated washing and high-friction training environments.', '20 Pieces', ['Quick-dry micro-dot fabric', 'Lightweight weather-resistant shells', 'High-visibility reflective print accents', 'Anti-pilling durability treatment'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Athletic training wear and session apparel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA66Kjd_eY-nItcjPbryelVUBRyNQ_qJMEQQPMhUf5Qcm5jEFmWEdM7xM_J0REDQWYz2xEyJCApOhY0TaYMliOQr06nP6ax0yifw89ueOIUUtgS-K_OPSUUWjeOFmXFsNt-OTTQBnVYHPgD5KiIIppL4ZY8MklQ3GM_gcaDRiNX4nC4vKtIg86w8T9pCzwCh2WpbOV2seZ2Ww-LELZGzIG15UoJBLFZBeiB7VjX6pM"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Pcs</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Daily Drills</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Training Wear</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Quarter-zips, bibs, drill tops, and warm-up pants for squad practice.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 8. Custom Sportswear -->
+<div class="group bg-surface-container-low flex flex-col justify-between overflow-hidden cursor-pointer" onclick="openProductModal('Custom Sportswear Bespoke Line', 'Have a unique silhouette, custom technical spec, or bespoke athletic garment requirement? We build custom patterns from scratch based on tech packs or sample garments.', '20 Pieces', ['Bespoke pattern drafting and grading', 'Custom-dyed pantone fabrics', 'Specialty trims, rubber patches, cords', 'Sample prototype prior to bulk batch'])">
+<div class="relative aspect-[4/3] overflow-hidden bg-surface-container-high">
+<img alt="Custom sportswear apparel design and prototyping" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM2XVSJClNv4qovb0smJQfk8MLV8qrUOPl62h3DRIc25DgKEuRqgICVGk64TmmDGdCWk5cZleY8h3-ZI8ZObxH2whT5FLilAj5o51J1z52FNzo5gmfVdZz9TSeOUvZZcUDHcicQnHTNx_i-wstWecZOek-Mo8fj1MbVZT2wq8vmGIatsnYqvp9pPOjVER5IDMfJ44lZuY3mbAwS5eRK38t0g_ZSya1kjw4N8Zab1M"/>
+<span class="absolute top-2 right-2 px-2 py-0.5 bg-surface-container-lowest font-label-mono text-label-mono text-primary font-bold">MOQ: 20 Pcs</span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider block">Bespoke Manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase group-hover:text-primary transition-colors">Custom Sportswear</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 line-clamp-2">Tailor-made garments built from your tech-packs and original designs.</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high group-hover:bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold tracking-wider transition-colors flex items-center justify-center gap-1" type="button">
+<span>VIEW DETAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE PRODUCT DETAIL MODAL -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-4" id="product-modal">
+<div class="bg-surface-container border-2 border-outline-variant max-w-2xl w-full p-space-lg space-y-space-md relative max-h-[90vh] overflow-y-auto">
+<div class="flex items-start justify-between border-b border-outline-variant/30 pb-4">
+<div>
+<span class="font-label-mono text-label-mono text-primary uppercase font-bold" id="modal-moq">MOQ: 20 Pieces</span>
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase" id="modal-title">Product Title</h3>
+</div>
+<button class="w-8 h-8 flex items-center justify-center bg-surface-container-high text-on-surface hover:bg-primary-container transition-colors" onclick="closeProductModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-secondary" id="modal-description"></p>
+<div class="space-y-2">
+<h4 class="font-label-mono text-label-mono uppercase text-on-surface font-bold">Standard Technical Specifications</h4>
+<ul class="space-y-1" id="modal-features"></ul>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="text-secondary font-body-sm text-body-sm">
+          Quotes tailored to roster size &amp; customization.
+        </div>
+<a class="w-full sm:w-auto px-space-md py-3 bg-primary-container text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider inline-flex items-center justify-center gap-2" href="#quote" onclick="closeProductModal()">
+<span>REQUEST A QUOTE FOR THIS</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CUSTOM SPORTSWEAR SECTION: YOUR TEAM. YOUR IDENTITY. -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface" id="custom">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 space-y-space-md order-2 lg:order-1">
+<div class="relative bg-surface-container-high overflow-hidden">
+<img alt="Detailed athletic embroidery crest on team jersey" class="w-full h-96 object-cover filter contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXq4zVBIJzP9hl9O7V5f4TmECqWOMMGZwUdr6G14TcdAQOYABT5oa3Qmg-KTs8x3qIwslXf0ZKRds70uDKMNUUwLgAbcc0EEmErDKI6kSNxos7Diq372mMq_PucXYsBm3z7Mx88tpbhjpQ4tnfQOOBAFzN7sIR0l2KZpEs2YGQfoDotKhgn5Blb1NPwjBLECp9mPoytoaPXYP8bzL7dvxdY2_OJ_Qie71Yp8sIsE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 bg-surface-container/90 backdrop-blur-sm border border-outline-variant/40">
+<span class="font-label-mono text-label-mono text-primary font-bold">PRECISION EMBROIDERY &amp; TRIMS</span>
+<p class="font-body-sm text-body-sm text-on-surface">Every badge is rendered with high-density threads or molded silicone shields.</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-space-md order-1 lg:order-2">
+<div class="inline-flex items-center gap-2">
+<span class="h-0.5 w-6 bg-primary-container"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Full Bespoke Capability</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface leading-tight">
+            Your Team. <br/><span class="text-primary-container">Your Identity.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary">
+            Create teamwear built around your colors, your design, and your identity. We don’t just slap a logo on a generic catalog tee—we build the entire garment from fabric roll to finished uniform.
+          </p>
+<!-- Customization Breakdown Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="p-3 bg-surface-container-low border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-2xl">colorize</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1 uppercase">Team Colors</h4>
+<p class="font-body-sm text-body-sm text-secondary">Exact Pantone matching for uniform consistency.</p>
+</div>
+<div class="p-3 bg-surface-container-low border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-2xl">shield</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1 uppercase">Team Logo</h4>
+<p class="font-body-sm text-body-sm text-secondary">Embroidery, 3D rubber, heat-seal or sublimation.</p>
+</div>
+<div class="p-3 bg-surface-container-low border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-2xl">badge</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1 uppercase">Player Names</h4>
+<p class="font-body-sm text-body-sm text-secondary">Personalized roster names on each garment.</p>
+</div>
+<div class="p-3 bg-surface-container-low border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-2xl">pin</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1 uppercase">Player Numbers</h4>
+<p class="font-body-sm text-body-sm text-secondary">Traditional varsity, modern block, or custom fonts.</p>
+</div>
+<div class="p-3 bg-surface-container-low border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-2xl">draw</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1 uppercase">Custom Designs</h4>
+<p class="font-body-sm text-body-sm text-secondary">Geometric patterns, gradients, and sublimated art.</p>
+</div>
+<div class="p-3 bg-surface-container-low border-l-2 border-primary-container">
+<span class="material-symbols-outlined text-primary text-2xl">styler</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1 uppercase">Uniform Styles</h4>
+<p class="font-body-sm text-body-sm text-secondary">Raglan, set-in sleeve, V-neck, polo collars, or crew.</p>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center justify-center h-12 px-space-md bg-primary-container text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider hover:bg-on-primary-fixed transition-colors" href="#quote">
+              START YOUR CUSTOM ORDER
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-STEP CUSTOMIZATION PROCESS -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="text-center max-w-3xl mx-auto space-y-space-xs">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Clear • Rapid • Reliable</span>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">The 4-Step Customization Process</h2>
+<p class="font-body-md text-body-md text-secondary">How we take your team idea from sketch to the stadium pitch without hassle.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-primary-container flex flex-col justify-between">
+<div>
+<div class="font-display-hero text-headline-xl font-extrabold text-primary/40 leading-none">01</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase mt-4 mb-2">Share Requirements</h3>
+<p class="font-body-sm text-body-sm text-secondary">Tell Anasal Enterprises what sportswear you need, estimated quantities (starting from 20 pcs), and your target deadline.</p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-primary font-label-mono text-label-mono">
+<span>STEP ONE</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-primary-container flex flex-col justify-between">
+<div>
+<div class="font-display-hero text-headline-xl font-extrabold text-primary/40 leading-none">02</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase mt-4 mb-2">Choose Your Design</h3>
+<p class="font-body-sm text-body-sm text-secondary">Provide colors, logos, names, numbers and design requirements. We prepare realistic 2D/3D digital kit mockups for your approval.</p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-primary font-label-mono text-label-mono">
+<span>STEP TWO</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-primary-container flex flex-col justify-between">
+<div>
+<div class="font-display-hero text-headline-xl font-extrabold text-primary/40 leading-none">03</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase mt-4 mb-2">Confirm Your Order</h3>
+<p class="font-body-sm text-body-sm text-secondary">Requirements, sizing rosters, and formal quotes are confirmed. Payment is arranged via bank transfer to inaugurate production.</p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-primary font-label-mono text-label-mono">
+<span>STEP THREE</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-primary-container flex flex-col justify-between">
+<div>
+<div class="font-display-hero text-headline-xl font-extrabold text-primary/40 leading-none">04</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase mt-4 mb-2">Prepare &amp; Ship</h3>
+<p class="font-body-sm text-body-sm text-secondary">The order moves into precision cutting, sublimation, stitching, quality checking, and direct international dispatch to your door.</p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-primary font-label-mono text-label-mono">
+<span>STEP FOUR</span>
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MOQ HIGHLIGHT HEROIC BANNER -->
+<section class="w-full bg-surface-container-high py-space-xl px-margin-mobile md:px-margin border-y border-outline-variant/30">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs text-center md:text-left">
+<span class="px-3 py-1 bg-primary-container text-on-surface font-label-mono text-label-mono uppercase font-bold">FLEXIBLE BATCHES</span>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface leading-tight">Starting From 20 Pieces</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+          Anasal Enterprises accepts teamwear orders starting from 20 pieces/sets. Perfect for starting clubs, varsity divisions, amateur tournaments, and academy squads.
+        </p>
+</div>
+<div class="shrink-0">
+<a class="inline-flex items-center justify-center h-14 px-space-xl bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider transition-all" href="#quote">
+          REQUEST A QUOTE
+        </a>
+</div>
+</div>
+</section>
+<!-- FILTERABLE GALLERY / MASONRY SPORTS EDITORIAL -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Visual Archive</span>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">Teamwear In Action</h2>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap gap-2" id="gallery-tabs">
+<button class="gallery-tab-btn active px-3 py-1.5 font-label-mono text-label-mono uppercase bg-primary-container text-on-surface font-bold" onclick="filterGallery('all', this)" type="button">All Work</button>
+<button class="gallery-tab-btn px-3 py-1.5 font-label-mono text-label-mono uppercase bg-surface-container text-secondary hover:text-on-surface" onclick="filterGallery('football', this)" type="button">Football Kits</button>
+<button class="gallery-tab-btn px-3 py-1.5 font-label-mono text-label-mono uppercase bg-surface-container text-secondary hover:text-on-surface" onclick="filterGallery('boxing', this)" type="button">Boxing Wear</button>
+<button class="gallery-tab-btn px-3 py-1.5 font-label-mono text-label-mono uppercase bg-surface-container text-secondary hover:text-on-surface" onclick="filterGallery('gym', this)" type="button">Gym &amp; Fitness</button>
+<button class="gallery-tab-btn px-3 py-1.5 font-label-mono text-label-mono uppercase bg-surface-container text-secondary hover:text-on-surface" onclick="filterGallery('tracksuits', this)" type="button">Tracksuits</button>
+</div>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md" id="gallery-container">
+<!-- Item 1: Football -->
+<div class="gallery-item football group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Soccer club kit lineup under lights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH4MV4PksyXi7N0w64sRGeO3PhByqkhfi1Ethw7LAo1GKffbmRi9htw6XM74acg6NM5pAmW_ECknyGGRKBXWYCN7S141h4DsAN4tz4T_FXJOeCMMZQOhfccZe0ZZZ2punrm8gww1raNGZ_qMyknl7tgz47BSHV-yoC8wk4P1_k-01C0Z46ubA3MP3GaO6e4TVKp9eiO_djEeh_otYgIV22SJiHSkNzhfUperb3JwM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex flex-col justify-end">
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase">Football Kit Series</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase">Dynamo Athletic Roster Kit</p>
+</div>
+</div>
+<!-- Item 2: Boxing -->
+<div class="gallery-item boxing group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Boxing satin trunks and hand wrap apparel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3L_lNAF0IXh4E5veHLsjaol78DfpLMzLntkQ1mqavqd1fTMRhFRF1XrNaNOzs-xei3n6ErGGyxffZJvqgpKZ2D3-nNu28fJaQBlTqO-Ek7NeS69SXgqfgC74_TVIBadxgba2DYliTMxFbT9bQY02FShK6f5ScVofLLY_7LMqKXFHvtBnfQqKrB6ve9CoH_aEl1YmM_ww38X971tDZE_7YGFH68K50M17wM_yvZcM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex flex-col justify-end">
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase">Combat Series</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase">Custom Satin Fight Trunks</p>
+</div>
+</div>
+<!-- Item 3: Gym Wear -->
+<div class="gallery-item gym group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Athletic training apparel conditioning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcd4rmMYD6Rupbf5W-T_7kKSlzDyekFN34x5tG9BjjSV1lO_eyZz8QhKVlN8pzWnWP3Fvdc9QSsUxzDhIHSy_dCfOeiwOYFXOLFJJc28WASHRvwn586k_zKSbut6s-qS_QiczH6FDCofz5fty08fBfn6McQW9fMcA-NLlodpLBNGXdgX90LuzHyoCaJXMbkhIAckPb5tyLMX0OGXL0QNTAOJG57My5qkpTJUUxWxw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex flex-col justify-end">
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase">Conditioning</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase">Stealth Gym Series</p>
+</div>
+</div>
+<!-- Item 4: Detail Craft -->
+<div class="gallery-item football group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Embroidered crest patch detail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALhoM51U6RUwXNApcQmkIrew6_FeAipXcxyHttF8CL398jPYABbbyd4ts1Fkwt20_W_7tVbwKf1Edk3gA7fXgX8_wdHHSukoP5AH8UgJGIY1XBa0slSYNZTx9cSponewceAN19zhG8SXa9mzANvtCtkMjrgY9RpvYeVA8k3xLLhIVdfBuaJqkmUpZZ6EjMDJt9pt3XhmdI-j0KsDRwvEipC23ZC5C6gPd5UmqGGoo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex flex-col justify-end">
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase">Embroidery Detail</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase">Precision Club Cresting</p>
+</div>
+</div>
+<!-- Item 5: Tracksuits -->
+<div class="gallery-item tracksuits group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Presentation tracksuit collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv_5FcHBX56qKZiYw6I5wHvOCXHGfXsIXJZFT9NK3Y_uG7aHsqI7n5i_u8gHGlCcvZavaWh_1-NIoULe9hTfz8WnSvswPqj4CD0uK6hh9ZtehrlFqc3bEkggs8PBhs5-4ZQrSCsRzNCGaVO3xjACFoFlawe3wRztY5FWUzwYwkKC2TskWcYUxLjnzOYo_AEEHajD1p1a5NIYSSefIeMw7Q1VRw4Otnt2crpci67FQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex flex-col justify-end">
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase">Sideline Travel</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase">Club Elite Tracksuit</p>
+</div>
+</div>
+<!-- Item 6: Training Wear -->
+<div class="gallery-item gym group relative aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Athletic training apparel in motion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDufWWi-817tNdZeJQ0oeF0ojicB1KGPSAv23MH0pqxHIacO3XK1agkUa8ALLv7ekehyjB_tH1rS5QCeDGLECbTm6UVA7eMANd0NZxG9M4FpXBUVtxFMY0jSRsmR5U-eM-w1drjJts5mnS2DEv1vFKhObS8I5dG0owh3ie7UIWUs9UwDiLA-CZssroSltk0ncfNGUPgS4R-8RaMVJdhAOy-j3b6dJ_uXrquXhpyuAw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-space-md flex flex-col justify-end">
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase">Performance Session</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase">Drill Velocity Kit</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS / WHAT TEAMS SAY -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="space-y-space-xs">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Team Trust</span>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">What Teams Say</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Review 1 -->
+<div class="p-space-lg bg-surface-container-low flex flex-col justify-between space-y-space-md border-l-2 border-primary-container">
+<div class="space-y-space-sm">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "The quality of the soccer uniforms exceeded our expectations. The colors matched our crest accurately and player names/numbers held up through 30 match days."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-4 border-t border-outline-variant/30">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center font-bold text-primary uppercase">
+              FC
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Marcus Sterling</h4>
+<p class="font-body-sm text-body-sm text-secondary">Director of Athletics, Northside FC</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-lg bg-surface-container-low flex flex-col justify-between space-y-space-md border-l-2 border-primary-container">
+<div class="space-y-space-sm">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Ordered custom boxing trunks and walk-out robes for our fight academy. Incredible embroidery precision on thick satin. Direct WhatsApp support made revision rounds simple."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-4 border-t border-outline-variant/30">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center font-bold text-primary uppercase">
+              KB
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Tariq Khan</h4>
+<p class="font-body-sm text-body-sm text-secondary">Head Coach, Apex Combat Gym</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-lg bg-surface-container-low flex flex-col justify-between space-y-space-md border-l-2 border-primary-container">
+<div class="space-y-space-sm">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Being able to order 25 tracksuits and hoodies without ridiculous minimums saved our club budget. Arrived from Sialkot ahead of scheduled departure."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-4 border-t border-outline-variant/30">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center font-bold text-primary uppercase">
+              AU
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight">Elena Vasquez</h4>
+<p class="font-body-sm text-body-sm text-secondary">President, Collegiate Sports Union</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRIMARY CONVERSION: REQUEST A QUOTE (INTERACTIVE COMPLETE FORM) -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface" id="quote">
+<div class="max-w-5xl mx-auto space-y-space-lg">
+<div class="space-y-space-xs text-center md:text-left">
+<div class="inline-flex items-center gap-2">
+<span class="h-0.5 w-6 bg-primary-container"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Team Order Dispatch</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">Request Your Quote</h2>
+<p class="font-body-lg text-body-lg text-secondary">
+          Tell us what your team needs and we'll get back to you with specs, digital mockups, and transparent pricing.
+        </p>
+</div>
+<!-- The Quote Form Box -->
+<form class="p-space-lg md:p-space-xl bg-surface-container-low border-2 border-outline-variant/40 space-y-space-md" id="quote-form" onsubmit="handleQuoteSubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Team Name -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="team-name">Team / Club / Organization *</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="team-name" placeholder="e.g. Manchester Athletic Club" required="" type="text"/>
+</div>
+<!-- Contact Name -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="contact-name">Contact Person *</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="contact-name" placeholder="e.g. Coach David Miller" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="contact-email">Email Address *</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="contact-email" placeholder="name@yourteam.com" required="" type="email"/>
+</div>
+<!-- Phone / WhatsApp -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="contact-phone">WhatsApp / Phone Number *</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="contact-phone" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+<!-- Country -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="contact-country">Destination Country *</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="contact-country" placeholder="e.g. United Kingdom / United States" required="" type="text"/>
+</div>
+<!-- Product Type Dropdown -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="product-type">Product Category *</label>
+<select class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="product-type" required="">
+<option value="Football / Soccer Kits">Football / Soccer Kits</option>
+<option value="Boxing Wear">Boxing Wear</option>
+<option value="Gym &amp; Fitness Wear">Gym &amp; Fitness Wear</option>
+<option value="Tracksuits">Tracksuits</option>
+<option value="Hoodies">Hoodies</option>
+<option value="Team Uniforms">Team Uniforms</option>
+<option value="Training Wear">Training Wear</option>
+<option value="Custom Sportswear">Custom Sportswear</option>
+<option value="Other">Other Sportswear</option>
+</select>
+</div>
+<!-- Quantity (MOQ indicator) -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="order-quantity">Estimated Quantity *</label>
+<span class="font-label-mono text-label-sm text-primary font-semibold">Min 20 pcs/sets</span>
+</div>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="order-quantity" min="20" placeholder="20" required="" type="number"/>
+</div>
+<!-- Sizes -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="order-sizes">Size Requirements</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="order-sizes" placeholder="e.g. S(5), M(10), L(8), XL(2) or Youth Sizes" type="text"/>
+</div>
+</div>
+<!-- Customization Requirements -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="custom-details">Customization Requirements *</label>
+<textarea class="w-full p-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="custom-details" placeholder="Specify primary/secondary colors, logo placement (chest, sleeve), player names, numbers, or specific collar styles..." required="" rows="3"></textarea>
+</div>
+<!-- Team Logo File Upload Area -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block">Upload Team Logo / Vector Crest / Tech Pack</label>
+<div class="border-2 border-dashed border-outline-variant/60 hover:border-primary p-6 bg-surface-container text-center flex flex-col items-center justify-center cursor-pointer transition-colors relative" id="drop-zone">
+<input class="absolute inset-0 opacity-0 cursor-pointer" id="logo-file" onchange="updateFileLabel(this)" type="file"/>
+<span class="material-symbols-outlined text-primary text-3xl mb-2">cloud_upload</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface" id="file-label-text">Drag &amp; drop your files here or click to browse</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">Accepted: PDF, AI, EPS, SVG, PNG, JPG (Max 25MB)</span>
+</div>
+</div>
+<!-- Additional Message -->
+<div class="space-y-1">
+<label class="font-label-mono text-label-mono uppercase text-on-surface-variant font-bold block" for="order-notes">Additional Notes / Tournament Deadlines</label>
+<input class="w-full h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md transition-colors" id="order-notes" placeholder="e.g. We need these delivered by July 15th for summer championship." type="text"/>
+</div>
+<!-- Quote Notice & Payment Disclaimer -->
+<div class="p-space-md bg-surface-container-high border-l-4 border-primary-container space-y-1">
+<p class="font-label-mono text-label-mono uppercase text-primary font-bold">Quote &amp; Payment Notice</p>
+<p class="font-body-sm text-body-sm text-secondary">
+            Pricing is fully quote-based depending on artwork complexity, fabric selection, and batch volume. Once your digital mockups and quotation are approved, payment is fulfilled securely via direct Bank Transfer. No public retail pricing is displayed to protect wholesale trade integrity.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<div class="flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span>Your designs and roster details remain 100% confidential.</span>
+</div>
+<button class="w-full sm:w-auto h-14 px-space-xl bg-primary-container hover:bg-on-primary-fixed text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider transition-all flex items-center justify-center gap-2" type="submit">
+<span>REQUEST MY QUOTE</span>
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+<!-- Success Feedback Dialog -->
+<div class="hidden p-space-lg bg-surface-container-high border-2 border-primary text-on-surface space-y-2" id="quote-success-banner">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md font-bold">
+<span class="material-symbols-outlined text-3xl">check_circle</span>
+<span>Quote Request Transmitted Successfully</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+          Thank you! The Anasal Enterprises technical production team will review your specifications and contact your team coordinator via WhatsApp or Email within 24 hours with digital proofs and wholesale pricing.
+        </p>
+</div>
+</div>
+</section>
+<!-- WORLDWIDE SHIPPING & BANK TRANSFER PAYMENT SECTION -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<div class="p-space-lg bg-surface-container-low border-t-2 border-primary-container flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+<span class="font-label-mono text-label-mono uppercase font-bold">International Logistics</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase">Worldwide Shipping</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            International shipping is available worldwide. We coordinate directly with premier express couriers (DHL Express, FedEx, UPS) and reliable sea/air freight forwarders. Contact Anasal Enterprises for specific shipping transit timetables and rates based on your destination and batch weight.
+          </p>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-mono text-label-mono pt-4 border-t border-outline-variant/30">
+<span>AIR EXPRESS: 4-7 DAYS</span>
+<span>•</span>
+<span>CARGO FREIGHT AVAILABLE</span>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-low border-t-2 border-primary-container flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">account_balance</span>
+<span class="font-label-mono text-label-mono uppercase font-bold">Secure Settlement</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase">Bank Transfer Payment</h3>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            Payment is handled conveniently via institutional bank wire transfer after your order quote, sizing schedule, and digital artwork proof have been thoroughly confirmed by your management. We guarantee absolute transparency with no surprise surcharges.
+          </p>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-mono text-label-mono pt-4 border-t border-outline-variant/30">
+<span>INVOICE-BASED WIRE TRANSFER</span>
+<span>•</span>
+<span>SWIFT / IBAN VERIFIED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ ACCORDION (Interactive with 8 specified Q&As) -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface">
+<div class="max-w-4xl mx-auto space-y-space-lg">
+<div class="text-center space-y-space-xs">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Clear Information</span>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-secondary">Essential details regarding orders, minimums, custom specs, and production.</p>
+</div>
+<div class="space-y-space-xs" id="faq-accordion">
+<!-- Q1 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>What is the minimum order quantity (MOQ)?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Our minimum order quantity starts from just 20 pieces or complete sets. This applies across our football kits, boxing wear, training apparel, hoodies, and custom tracksuits, making bespoke teamwear accessible to emerging clubs and academy divisions.
+          </div>
+</div>
+<!-- Q2 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>What custom sportswear options can we choose?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            You have comprehensive control: custom team colors (Pantone matched), high-definition sublimation, embroidered or 3D silicone team badges, custom collar patterns, individual player names, squad numbers, sponsor logos, and personalized neck tags.
+          </div>
+</div>
+<!-- Q3 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Do you offer worldwide shipping?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Yes! We ship globally directly from our manufacturing hub in Sialkot, Pakistan to clubs across North America, Europe, the Middle East, Australia, and worldwide using fast air freight couriers like DHL Express, FedEx, and door-to-door air cargo.
+          </div>
+</div>
+<!-- Q4 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>How does the quote process work?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Simply submit our online Quote Request form or message us directly via WhatsApp (+92 330 6204034). We examine your quantity, fabric specs, and design files, and return a tailored itemized quote along with visual mockups within 24 hours.
+          </div>
+</div>
+<!-- Q5 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>How is payment handled?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Payment is securely handled via official Bank Wire Transfer (T/T). Once digital art proofs and final quote figures are signed off by both parties, official commercial invoice with banking coordinates is dispatched.
+          </div>
+</div>
+<!-- Q6 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Can we upload our team logo and artwork?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Absolutely. You can attach vector files (AI, EPS, PDF, SVG) or high-res raster files (PNG, JPG) directly into the quote form or send them via WhatsApp/Email. Our design team will convert them into ready-to-sew embroidery or sublimation files.
+          </div>
+</div>
+<!-- Q7 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Why are prices not shown publicly on the website?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Because every order is 100% custom made-to-order! Pricing is variable based on total unit volume, fabric GSM, complexity of printing/embroidery, and shipping destination. We give you direct factory quotes with zero retail markup.
+          </div>
+</div>
+<!-- Q8 -->
+<div class="bg-surface-container-low border border-outline-variant/30">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm uppercase font-bold text-on-surface hover:text-primary transition-colors" onclick="toggleFaq(this)" type="button">
+<span>Do you supply both amateur and professional sports teams?</span>
+<span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-secondary font-body-md text-body-md">
+            Yes. We manufacture uniforms for professional combat fighters, top-flight football clubs, university athletic leagues, youth developmental academies, and crossfit/fitness brands worldwide with the exact same industrial standards.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- DIRECT CONTACT SECTION: LET'S BUILD YOUR TEAMWEAR -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface-container-lowest" id="contact">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="space-y-space-xs text-center">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary">Direct Factory Communication</span>
+<h2 class="font-headline-xl text-headline-xl uppercase font-bold text-on-surface">Let's Build Your Teamwear</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl mx-auto">
+          Talk directly with our kit technicians. Fast turnaround on quotes, production advice, and sample requests.
+        </p>
+</div>
+<!-- 3 Direct Action Hero Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- WhatsApp -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-[#25D366] flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="w-12 h-12 bg-[#25D366]/10 text-[#25D366] flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase">Chat on WhatsApp</h3>
+<p class="font-body-sm text-body-sm text-secondary">Instant real-time responses, proof exchanges, and voice updates.</p>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface pt-2">+92 330 6204034</p>
+</div>
+<a class="w-full py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-headline-sm text-headline-sm uppercase font-bold tracking-wider flex items-center justify-center gap-2 transition-colors" href="https://wa.me/923306204034" rel="noopener noreferrer" target="_blank">
+<span>OPEN WHATSAPP</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- Phone Call -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-primary-container flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="w-12 h-12 bg-primary-container/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase">Direct Phone Line</h3>
+<p class="font-body-sm text-body-sm text-secondary">Speak directly with our export division head office in Sialkot.</p>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface pt-2">+92 330 6204034</p>
+</div>
+<a class="w-full py-3 bg-surface-container-high hover:bg-primary-container text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider flex items-center justify-center gap-2 transition-colors" href="tel:+923306204034">
+<span>CALL FACTORY</span>
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+</a>
+</div>
+<!-- Email -->
+<div class="p-space-lg bg-surface-container-low border-b-4 border-surface-tint flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="w-12 h-12 bg-surface-tint/10 text-surface-tint flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface uppercase">Send Inquiry Email</h3>
+<p class="font-body-sm text-body-sm text-secondary">Submit comprehensive tenders, PDF tech packs, and procurement specs.</p>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface pt-2 break-all">anasalenterprisespak@gmail.com</p>
+</div>
+<a class="w-full py-3 bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider flex items-center justify-center gap-2 transition-colors" href="mailto:anasalenterprisespak@gmail.com">
+<span>EMAIL INQUIRY</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</a>
+</div>
+</div>
+<!-- Factory Location Banner -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4 border-l-4 border-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">Sialkot Industrial Zone, Pakistan</span>
+<p class="font-body-sm text-body-sm text-secondary">The Global Capital of Elite Sports Apparel &amp; Football Manufacturing.</p>
+</div>
+</div>
+<span class="font-label-mono text-label-mono uppercase text-primary font-bold">MON - SAT: 09:00 - 19:00 PKT (UTC+5)</span>
+</div>
+</div>
+</section>
+<!-- NEWSLETTER: STAY IN THE GAME -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin bg-surface-container-low border-t border-outline-variant/30">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs text-center md:text-left">
+<span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-bold">Stay In The Game</span>
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase">Product Drops &amp; Team Insights</h3>
+<p class="font-body-md text-body-md text-secondary">Get updates about new sportswear textiles, teamwear cuts, and factory product announcements.</p>
+</div>
+<form class="w-full md:w-auto flex flex-col sm:flex-row gap-2 shrink-0" onsubmit="handleNewsletter(event)">
+<input class="h-12 px-space-md bg-surface-container border border-outline-variant/50 focus:border-primary text-on-surface focus:outline-none font-body-md text-body-md min-w-[260px]" placeholder="Enter team email address" required="" type="email"/>
+<button class="h-12 px-space-lg bg-primary-container hover:bg-on-primary-fixed text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider transition-colors" type="submit">
+          SUBSCRIBE
+        </button>
+</form>
+</div>
+<div class="max-w-4xl mx-auto mt-4 hidden text-center font-label-mono text-label-mono text-primary uppercase font-bold" id="newsletter-success">
+      ✓ Team subscribed to factory releases.
+    </div>
+</section>
+<!-- JAVASCRIPT LOGIC -->
+<script>
+    // Product Detail Modal Trigger
+    function openProductModal(title, description, moq, features) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-description').textContent = description;
+      document.getElementById('modal-moq').textContent = 'MOQ: ' + moq;
+      
+      const featureList = document.getElementById('modal-features');
+      featureList.innerHTML = '';
+      features.forEach(function(feat) {
+        const li = document.createElement('li');
+        li.className = 'flex items-center gap-2 font-body-sm text-body-sm text-on-surface';
+        li.innerHTML = '<span class="material-symbols-outlined text-primary text-[18px]">check</span><span>' + feat + '</span>';
+        featureList.appendChild(li);
+      });
+
+      const modal = document.getElementById('product-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('product-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Gallery Filter Logic
+    function filterGallery(category, btn) {
+      const tabs = document.querySelectorAll('.gallery-tab-btn');
+      tabs.forEach(t => {
+        t.classList.remove('bg-primary-container', 'text-on-surface', 'font-bold');
+        t.classList.add('bg-surface-container', 'text-secondary');
+      });
+      btn.classList.remove('bg-surface-container', 'text-secondary');
+      btn.classList.add('bg-primary-container', 'text-on-surface', 'font-bold');
+
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+
+      // Close all others
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // File input label update
+    function updateFileLabel(input) {
+      const label = document.getElementById('file-label-text');
+      if (input.files && input.files[0]) {
+        label.textContent = 'Selected: ' + input.files[0].name;
+      }
+    }
+
+    // Quote Form Submit Simulation
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const banner = document.getElementById('quote-success-banner');
+      banner.classList.remove('hidden');
+      document.getElementById('quote-form').reset();
+      document.getElementById('file-label-text').textContent = 'Drag & drop your files here or click to browse';
+      banner.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Newsletter Handler
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const nBanner = document.getElementById('newsletter-success');
+      nBanner.classList.remove('hidden');
+      e.target.reset();
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 text-on-surface"><div class="w-full px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="ANASAL ENTERPRISES Official Sportswear Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UWy3epmlBkSdxyLhwJj00PKICgi0Ycp7GqitFW6IvER3qXfMt9dRs1mhGZcUNE45aE02akq5mqYz7NXYkq5yHz-TxfyUolIdvj4mItY0QOrzd70_PAVGQnVo0gqO2NbmNPj_e6owHUEWkdquIP65iuxj13rNF6dPTDSR6CkP-mIEGMwHX5uPuIHNoONs3N2cCTWAe4vwZzdi20KlVGdlfu-z8RXcYhrpFd2MgaImMO"/><span class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">ANASAL</span></div><p class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">Custom Sportswear. Built to Perform.</p><p class="font-body-sm text-body-sm text-secondary">Elite athletic apparel engineered in Sialkot, Pakistan for professional teams, clubs, and athletic programs worldwide.</p></div><div class="space-y-space-md"><span class="font-label-mono text-label-mono uppercase text-on-surface-variant tracking-widest block">Navigation</span><ul class="space-y-space-xs"><li class="leading-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors" data-path="home" href="#">Home</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors" data-path="products" href="#">Products</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors" data-path="custom-sportswear" href="#">Custom Sportswear</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors" data-path="request-a-quote" href="#">Request a Quote</a></li><li class="leading-none"><a class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></li></ul></div><div class="space-y-space-md"><span class="font-label-mono text-label-mono uppercase text-on-surface-variant tracking-widest block">Direct Contact</span><ul class="space-y-space-sm font-body-sm text-body-sm text-secondary"><li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span><a class="hover:text-on-surface transition-colors" href="tel:+923306204034">+92 330 6204034</a></li><li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">mail</span><a class="hover:text-on-surface transition-colors break-all" href="mailto:anasalenterprisespak@gmail.com">anasalenterprisespak@gmail.com</a></li><li class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span><span>Sialkot, Pakistan</span></li></ul><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-8 h-8 flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Facebook" class="w-8 h-8 flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors" href="https://facebook.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">public</span></a></div></div><div class="space-y-space-md"><span class="font-label-mono text-label-mono uppercase text-on-surface-variant tracking-widest block">Production &amp; Logistics</span><div class="p-space-md bg-surface-container border border-outline-variant/40 space-y-space-sm"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-primary text-[20px]">public</span><span class="font-label-mono text-label-mono uppercase font-bold">Worldwide Shipping</span></div><p class="font-body-sm text-body-sm text-secondary">Direct air and sea freight fulfillment globally.</p></div><div class="p-space-md bg-surface-container border border-outline-variant/40 space-y-space-xs"><span class="font-label-mono text-label-mono uppercase text-primary font-bold block">MOQ Requirement</span><p class="font-body-sm text-body-sm text-on-surface font-semibold">Starting From 20 Pieces / Sets</p><p class="font-body-sm text-body-sm text-secondary">Full sublimation, embroidery &amp; custom trims included.</p></div></div></div><div class="mt-space-xl pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-secondary font-label-mono text-label-mono"><p>© Anasal Enterprises. All rights reserved.</p><p class="uppercase tracking-wider text-on-surface-variant">Sialkot Industrial Craft • Engineered Teamwear</p></div></div></footer><aside class="fixed bottom-6 right-6 z-50"><a aria-label="Contact on WhatsApp +92 330 6204034" class="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-2xl transition-transform active:scale-95 cursor-pointer" href="https://wa.me/923306204034" rel="noopener noreferrer" style="animation: pulse-subtle 2.5s infinite;" target="_blank"><span class="material-symbols-outlined text-[32px]">chat</span></a></aside></body></html>
