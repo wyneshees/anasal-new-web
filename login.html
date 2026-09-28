@@ -17,52 +17,54 @@
       darkMode: "class",
       theme: {
         extend: {
-          colors: {
-            "surface-container-low": "#1c1b1d",
-            "on-primary-fixed": "#410007",
-            "secondary-fixed": "#e2e2e5",
-            "on-secondary-fixed": "#1a1c1e",
-            "tertiary": "#c7c5d1",
-            "surface-container-high": "#2a2a2c",
-            "secondary": "#c6c6c9",
-            "inverse-on-surface": "#313032",
-            "tertiary-fixed": "#e3e1ed",
-            "outline": "#ae8786",
-            "secondary-container": "#4a4b4e",
-            "on-primary-fixed-variant": "#92001b",
-            "on-error": "#690005",
-            "inverse-surface": "#e5e1e4",
-            "tertiary-fixed-dim": "#c7c5d1",
-            "on-tertiary": "#303039",
-            "on-secondary-container": "#bbbbbe",
-            "outline-variant": "#5d3f3e",
-            "on-surface": "#e5e1e4",
-            "surface-bright": "#39393b",
-            "inverse-primary": "#bf0027",
-            "on-primary-container": "#5b000d",
-            "on-secondary": "#2f3033",
-            "secondary-fixed-dim": "#c6c6c9",
-            "on-tertiary-fixed": "#1b1b23",
-            "error": "#ffb4ab",
-            "tertiary-container": "#918f9b",
-            "primary-fixed": "#ffdad8",
-            "surface-container-lowest": "#0e0e10",
-            "on-surface-variant": "#e7bcba",
-            "on-tertiary-container": "#292932",
-            "on-primary": "#680010",
-            "surface-container-highest": "#353437",
-            "surface-dim": "#131315",
-            "primary-container": "#ff535a",
-            "surface-tint": "#ffb3b0",
-            "background": "#131315",
-            "surface-variant": "#353437",
-            "on-error-container": "#ffdad6",
-            "surface-container": "#201f21",
-            "surface": "#131315",
-            "primary-fixed-dim": "#ffb3b0",
-            "error-container": "#93000a",
-            "on-background": "#e5e1e4",
-            "primary": "#ffb3b0"
+                    colors: {
+            "surface-container-low": "rgb(var(--surface-container-low) / <alpha-value>)",
+            "on-primary-fixed": "rgb(var(--on-primary-fixed) / <alpha-value>)",
+            "secondary-fixed": "rgb(var(--secondary-fixed) / <alpha-value>)",
+            "on-secondary-fixed": "rgb(var(--on-secondary-fixed) / <alpha-value>)",
+            "tertiary": "rgb(var(--tertiary) / <alpha-value>)",
+            "surface-container-high": "rgb(var(--surface-container-high) / <alpha-value>)",
+            "secondary": "rgb(var(--secondary) / <alpha-value>)",
+            "inverse-on-surface": "rgb(var(--inverse-on-surface) / <alpha-value>)",
+            "tertiary-fixed": "rgb(var(--tertiary-fixed) / <alpha-value>)",
+            "outline": "rgb(var(--outline) / <alpha-value>)",
+            "secondary-container": "rgb(var(--secondary-container) / <alpha-value>)",
+            "on-primary-fixed-variant": "rgb(var(--on-primary-fixed-variant) / <alpha-value>)",
+            "on-error": "rgb(var(--on-error) / <alpha-value>)",
+            "inverse-surface": "rgb(var(--inverse-surface) / <alpha-value>)",
+            "tertiary-fixed-dim": "rgb(var(--tertiary-fixed-dim) / <alpha-value>)",
+            "on-tertiary": "rgb(var(--on-tertiary) / <alpha-value>)",
+            "on-secondary-container": "rgb(var(--on-secondary-container) / <alpha-value>)",
+            "outline-variant": "rgb(var(--outline-variant) / <alpha-value>)",
+            "on-surface": "rgb(var(--on-surface) / <alpha-value>)",
+            "surface-bright": "rgb(var(--surface-bright) / <alpha-value>)",
+            "inverse-primary": "rgb(var(--inverse-primary) / <alpha-value>)",
+            "on-primary-container": "rgb(var(--on-primary-container) / <alpha-value>)",
+            "on-secondary": "rgb(var(--on-secondary) / <alpha-value>)",
+            "secondary-fixed-dim": "rgb(var(--secondary-fixed-dim) / <alpha-value>)",
+            "on-tertiary-fixed": "rgb(var(--on-tertiary-fixed) / <alpha-value>)",
+            "error": "rgb(var(--error) / <alpha-value>)",
+            "tertiary-container": "rgb(var(--tertiary-container) / <alpha-value>)",
+            "primary-fixed": "rgb(var(--primary-fixed) / <alpha-value>)",
+            "surface-container-lowest": "rgb(var(--surface-container-lowest) / <alpha-value>)",
+            "on-surface-variant": "rgb(var(--on-surface-variant) / <alpha-value>)",
+            "on-tertiary-container": "rgb(var(--on-tertiary-container) / <alpha-value>)",
+            "on-primary": "rgb(var(--on-primary) / <alpha-value>)",
+            "surface-container-highest": "rgb(var(--surface-container-highest) / <alpha-value>)",
+            "surface-dim": "rgb(var(--surface-dim) / <alpha-value>)",
+            "primary-container": "rgb(var(--primary-container) / <alpha-value>)",
+            "surface-tint": "rgb(var(--surface-tint) / <alpha-value>)",
+            "background": "rgb(var(--background) / <alpha-value>)",
+            "surface-variant": "rgb(var(--surface-variant) / <alpha-value>)",
+            "on-error-container": "rgb(var(--on-error-container) / <alpha-value>)",
+            "surface-container": "rgb(var(--surface-container) / <alpha-value>)",
+            "surface": "rgb(var(--surface) / <alpha-value>)",
+            "primary-fixed-dim": "rgb(var(--primary-fixed-dim) / <alpha-value>)",
+            "error-container": "rgb(var(--error-container) / <alpha-value>)",
+            "on-background": "rgb(var(--on-background) / <alpha-value>)",
+            "on-secondary-fixed-variant": "rgb(var(--on-secondary-fixed-variant) / <alpha-value>)",
+            "on-tertiary-fixed-variant": "rgb(var(--on-tertiary-fixed-variant) / <alpha-value>)",
+            "primary": "rgb(var(--primary) / <alpha-value>)"
           },
           fontFamily: {
             "display": ["Space Grotesk", "sans-serif"],
@@ -78,6 +80,125 @@
       50% { transform: scale(1.02); box-shadow: 0 0 0 8px rgba(255, 83, 90, 0); }
     }
   </style>
+<script>
+    (function() {
+      const savedTheme = localStorage.getItem('anasal_theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('anasal_theme', isDark ? 'dark' : 'light');
+    }
+  </script>
+
+  <style>
+    :root {
+      /* Light Theme */
+      --surface: 255 255 255;
+      --surface-dim: 243 241 245;
+      --surface-bright: 255 255 255;
+      --surface-container-lowest: 248 247 250;
+      --surface-container-low: 243 241 245;
+      --surface-container: 236 234 239;
+      --surface-container-high: 229 227 232;
+      --surface-container-highest: 222 220 225;
+      --on-surface: 24 23 27;
+      --on-surface-variant: 85 80 88;
+      --inverse-surface: 46 45 48;
+      --inverse-on-surface: 245 242 246;
+      --outline: 140 135 142;
+      --outline-variant: 216 211 219;
+      --surface-tint: 200 15 35;
+      --primary: 205 0 32;
+      --on-primary: 255 255 255;
+      --primary-container: 255 83 90;
+      --on-primary-container: 60 0 8;
+      --inverse-primary: 255 179 176;
+      --secondary: 95 94 100;
+      --on-secondary: 255 255 255;
+      --secondary-container: 228 227 232;
+      --on-secondary-container: 26 26 30;
+      --tertiary: 105 103 112;
+      --on-tertiary: 255 255 255;
+      --tertiary-container: 224 222 232;
+      --on-tertiary-container: 24 24 30;
+      --error: 186 26 26;
+      --on-error: 255 255 255;
+      --error-container: 255 218 214;
+      --on-error-container: 65 0 2;
+      --primary-fixed: 255 218 216;
+      --primary-fixed-dim: 255 179 176;
+      --on-primary-fixed: 65 0 7;
+      --on-primary-fixed-variant: 146 0 27;
+      --secondary-fixed: 226 226 229;
+      --secondary-fixed-dim: 198 198 201;
+      --on-secondary-fixed: 26 28 30;
+      --on-secondary-fixed-variant: 69 71 73;
+      --tertiary-fixed: 227 225 237;
+      --tertiary-fixed-dim: 199 197 209;
+      --on-tertiary-fixed: 27 27 35;
+      --on-tertiary-fixed-variant: 70 70 80;
+      --background: 255 255 255;
+      --on-background: 24 23 27;
+      --surface-variant: 230 226 233;
+    }
+
+    html.dark {
+      /* Dark Theme */
+      --surface: 19 19 21;
+      --surface-dim: 19 19 21;
+      --surface-bright: 57 57 59;
+      --surface-container-lowest: 14 14 16;
+      --surface-container-low: 28 27 29;
+      --surface-container: 32 31 33;
+      --surface-container-high: 42 42 44;
+      --surface-container-highest: 53 52 55;
+      --on-surface: 229 225 228;
+      --on-surface-variant: 231 188 186;
+      --inverse-surface: 229 225 228;
+      --inverse-on-surface: 49 48 50;
+      --outline: 174 135 134;
+      --outline-variant: 93 63 62;
+      --surface-tint: 255 179 176;
+      --primary: 255 179 176;
+      --on-primary: 104 0 16;
+      --primary-container: 255 83 90;
+      --on-primary-container: 91 0 13;
+      --inverse-primary: 191 0 39;
+      --secondary: 198 198 201;
+      --on-secondary: 47 48 51;
+      --secondary-container: 74 75 78;
+      --on-secondary-container: 187 187 190;
+      --tertiary: 199 197 209;
+      --on-tertiary: 48 48 57;
+      --tertiary-container: 145 143 155;
+      --on-tertiary-container: 41 41 50;
+      --error: 255 180 171;
+      --on-error: 105 0 5;
+      --error-container: 147 0 10;
+      --on-error-container: 255 218 214;
+      --primary-fixed: 255 218 216;
+      --primary-fixed-dim: 255 179 176;
+      --on-primary-fixed: 65 0 7;
+      --on-primary-fixed-variant: 146 0 27;
+      --secondary-fixed: 226 226 229;
+      --secondary-fixed-dim: 198 198 201;
+      --on-secondary-fixed: 26 28 30;
+      --on-secondary-fixed-variant: 69 71 73;
+      --tertiary-fixed: 227 225 237;
+      --tertiary-fixed-dim: 199 197 209;
+      --on-tertiary-fixed: 27 27 35;
+      --on-tertiary-fixed-variant: 70 70 80;
+      --background: 19 19 21;
+      --on-background: 229 225 228;
+      --surface-variant: 53 52 55;
+    }
+  </style>
+
 </head>
 <body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary">
 
@@ -98,7 +219,7 @@
         <span class="material-symbols-outlined text-[16px]">arrow_back</span>
         <span class="hidden sm:inline">Back to Website</span>
       </a>
-      <button aria-label="Toggle Dark/Light Mode" onclick="document.documentElement.classList.toggle('dark')" class="w-9 h-9 flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors rounded">
+      <button aria-label="Toggle Dark/Light Mode" onclick="toggleTheme()" class="w-9 h-9 flex items-center justify-center bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors rounded">
         <span class="material-symbols-outlined text-[18px] dark:hidden">dark_mode</span>
         <span class="material-symbols-outlined text-[18px] hidden dark:inline-block">light_mode</span>
       </button>
