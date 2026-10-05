@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin/>
+<html class="dark" lang="en"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" name="viewport"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="theme-color" content="#131315"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta content="web_standard" name="shell-type"/>
+<link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin/>
 <link rel="dns-prefetch" href="https://formsubmit.co"/>
-<link rel="dns-prefetch" href="https://fonts.googleapis.com"/><link rel="icon" type="image/jpeg" href="logo.jpg"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes pulse-subtle{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,0.6);}50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(37,211,102,0);}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+<link rel="icon" type="image/jpeg" href="logo.jpg"/>
+<link rel="apple-touch-icon" href="logo.jpg"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+  @layer base{
+    html,body{margin:0;padding:0;}
+    body{overscroll-behavior-y:none;}
+    main>:first-child{margin-top:0!important;}
+    main>:last-child{margin-bottom:0!important;}
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  ::-webkit-scrollbar{display:none;}
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  @keyframes pulse-subtle{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,0.6);}50%{transform:scale(1.05);box-shadow:0 0 0 12px rgba(37,211,102,0);}}
+  @keyframes slideUpSheet { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .animate-slide-up { animation: slideUpSheet 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">tailwind.config = {
   darkMode: "class",
   theme: {
     extend: {
@@ -1591,32 +1625,97 @@
   </button>
 </aside>
 
-<!-- App-Like Mobile Sticky Bottom Bar (Optimized for Smartphones) -->
-<div class="fixed bottom-0 left-0 right-0 z-50 xl:hidden bg-surface-container-lowest/95 backdrop-blur-lg border-t-2 border-[#25D366] shadow-[0_-4px_25px_rgba(0,0,0,0.35)] flex items-stretch" style="padding-bottom: max(env(safe-area-inset-bottom), 6px);">
+<!-- App-Like Mobile 4-Button Sticky Bottom Bar (Optimized for Smartphones) -->
+<div class="fixed bottom-0 left-0 right-0 z-40 xl:hidden bg-surface-container-lowest/95 backdrop-blur-xl border-t border-outline-variant/30 shadow-[0_-8px_30px_rgba(0,0,0,0.45)] flex items-stretch" style="padding-bottom: max(env(safe-area-inset-bottom), 6px);">
+  <!-- Home -->
+  <a href="#" class="flex-1 flex flex-col items-center justify-center gap-0.5 py-2 text-on-surface hover:text-primary active:scale-90 transition-all">
+    <span class="material-symbols-outlined text-xl">home</span>
+    <span class="font-label-mono uppercase font-bold text-[9px] tracking-wider">Home</span>
+  </a>
+
+  <!-- Products Catalog -->
+  <a href="#products" class="flex-1 flex flex-col items-center justify-center gap-0.5 py-2 text-on-surface hover:text-primary active:scale-90 transition-all border-l border-outline-variant/20">
+    <span class="material-symbols-outlined text-xl">sports_martial_arts</span>
+    <span class="font-label-mono uppercase font-bold text-[9px] tracking-wider">Catalog</span>
+  </a>
+
   <!-- WhatsApp Direct Button -->
-  <button onclick="openWhatsApp()" type="button" class="flex-1 flex flex-col items-center justify-center gap-1 py-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white active:scale-95 transition-all cursor-pointer">
-    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span class="font-label-mono uppercase font-bold text-[11px] tracking-wider">WhatsApp</span>
+  <button onclick="openWhatsApp()" type="button" class="flex-1 flex flex-col items-center justify-center gap-0.5 py-2 bg-[#25D366] hover:bg-[#20bd5a] text-white active:scale-95 transition-all cursor-pointer relative shadow-lg">
+    <span class="absolute top-1 right-2.5 w-2 h-2 rounded-full bg-white animate-ping"></span>
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="font-label-mono uppercase font-bold text-[9px] tracking-wider">WhatsApp</span>
   </button>
 
-  <!-- Direct Phone Call Button -->
-  <a href="tel:+923306204034" class="flex-1 flex flex-col items-center justify-center gap-1 py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface active:scale-95 transition-all border-x border-outline-variant/20">
-    <span class="material-symbols-outlined text-primary text-2xl">call</span>
-    <span class="font-label-mono uppercase font-bold text-[11px] tracking-wider">Call Us</span>
+  <!-- Quote -->
+  <a href="#quote" class="flex-1 flex flex-col items-center justify-center gap-0.5 py-2 bg-primary-container hover:bg-on-primary-fixed text-on-surface active:scale-95 transition-all border-l border-outline-variant/20">
+    <span class="material-symbols-outlined text-xl">request_quote</span>
+    <span class="font-label-mono uppercase font-bold text-[9px] tracking-wider">Get Quote</span>
   </a>
+</div>
 
-  <!-- Fast Quote Action Button -->
-  <a href="#quote" class="flex-1 flex flex-col items-center justify-center gap-1 py-2.5 bg-primary-container hover:bg-on-primary-fixed text-on-surface active:scale-95 transition-all">
-    <span class="material-symbols-outlined text-2xl">request_quote</span>
-    <span class="font-label-mono uppercase font-bold text-[11px] tracking-wider">Get Quote</span>
-  </a>
+<!-- Mobile Quick Connect Bottom Sheet Modal -->
+<div id="mobile-contact-sheet" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-end sm:items-center justify-center p-0 sm:p-4 transition-opacity">
+  <div class="w-full sm:max-w-md bg-surface-container border-t-4 sm:border-2 border-primary-container p-6 space-y-4 rounded-t-2xl sm:rounded-none animate-slide-up shadow-2xl">
+    <div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-headline-sm font-bold text-on-surface uppercase">Contact Anasal Enterprises</h3>
+          <p class="text-xs text-secondary">Factory Direct • Sialkot, Pakistan</p>
+        </div>
+      </div>
+      <button onclick="document.getElementById('mobile-contact-sheet').classList.add('hidden'); document.getElementById('mobile-contact-sheet').classList.remove('flex');" class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center">
+        <span class="material-symbols-outlined text-sm">close</span>
+      </button>
+    </div>
+
+    <div class="space-y-2.5">
+      <!-- 1. WhatsApp Mobile App -->
+      <a href="whatsapp://send?phone=923306204034&text=Hi%20Anasal%20Enterprises!%20I%20am%20interested%20in%20custom%20sportswear." class="w-full h-12 flex items-center justify-between px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-headline-sm text-sm uppercase font-bold tracking-wide transition-all shadow-md">
+        <span class="flex items-center gap-2.5">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>Chat on WhatsApp App</span>
+        </span>
+        <span class="material-symbols-outlined text-sm">open_in_new</span>
+      </a>
+
+      <!-- 2. WhatsApp Web -->
+      <a href="https://web.whatsapp.com/send?phone=923306204034&text=Hi%20Anasal%20Enterprises!%20I%20am%20interested%20in%20custom%20sportswear." target="_blank" rel="noopener noreferrer" class="w-full h-12 flex items-center justify-between px-4 bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-sm uppercase font-bold tracking-wide transition-all border border-outline-variant/40">
+        <span class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-green-400">language</span>
+          <span>Open WhatsApp Web</span>
+        </span>
+        <span class="material-symbols-outlined text-sm">chevron_right</span>
+      </a>
+
+      <!-- 3. Direct Call -->
+      <a href="tel:+923306204034" class="w-full h-12 flex items-center justify-between px-4 bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-sm uppercase font-bold tracking-wide transition-all border border-outline-variant/40">
+        <span class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-primary">call</span>
+          <span>Direct Phone Line (+92 330 6204034)</span>
+        </span>
+        <span class="material-symbols-outlined text-sm">call_made</span>
+      </a>
+
+      <!-- 4. Email / Gmail -->
+      <a href="https://mail.google.com/mail/?view=cm&to=anasalenterprisespak@gmail.com&su=Inquiry+from+Mobile&body=Hello+Anasal+Enterprises,%0A%0AI+would+like+to+discuss+custom+sportswear." target="_blank" rel="noopener noreferrer" class="w-full h-12 flex items-center justify-between px-4 bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-sm uppercase font-bold tracking-wide transition-all border border-outline-variant/40">
+        <span class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-surface-tint">mail</span>
+          <span>Email: anasalenterprisespak@gmail.com</span>
+        </span>
+        <span class="material-symbols-outlined text-sm">chevron_right</span>
+      </a>
+    </div>
+  </div>
 </div>
 
 <!-- Extra bottom padding on mobile so content is never obscured by the bottom bar -->
 <style>
   @media (max-width: 1279px) {
     body {
-      padding-bottom: 84px !important;
+      padding-bottom: 80px !important;
     }
   }
 </style>
